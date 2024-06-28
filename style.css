@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+}
+
+div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    animation: borderGlow 5s linear infinite;
+    border-radius: 25px;
+}
+
+.button {
+    font-size: 26px;
+    font-weight: bolder;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    background-color: #333333;
+    color: #cccccc;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 100px;
+    border-radius: 25px;
+    border: solid 2px #cccccc;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    /* Added animation property */
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+
+    to {
+        text-shadow: 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 35px #ffffff, 0 0 45px #ffffff;
+    }
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.7), 0 0 40px rgba(0, 191, 255, 0.7), 0 0 60px rgba(0, 191, 255, 0.7), 0 0 80px rgba(0, 191, 255, 0.7);
+    }
+
+    25% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 40px rgba(0, 191, 255, 0.8), 0 0 60px rgba(0, 191, 255, 0.8), 0 0 80px rgba(0, 191, 255, 0.8);
+    }
+cle
+    50% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.9), 0 0 40px rgba(0, 191, 255, 0.9), 0 0 60px rgba(0, 191, 255, 0.9), 0 0 80px rgba(0, 191, 255, 0.9);
+    }
+
+    75% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 1), 0 0 40px rgba(0, 191, 255, 1), 0 0 60px rgba(0, 191, 255, 1), 0 0 80px rgba(0, 191, 255, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.9), 0 0 40px rgba(0, 191, 255, 0.9), 0 0 60px rgba(0, 191, 255, 0.9), 0 0 80px rgba(0, 191, 255, 0.9);
+    }
+}
